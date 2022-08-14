@@ -25,7 +25,7 @@ bob_raw = {
     'publicKey': '04FC44820944A54A358E9936624C1108E86ECE0D759DA26CCF0BFA2297B09CACD0CF52663BBCCF9061DAA9DBF04543E090D0EC27FEFBA357935338C23759D71C3D',
 }
 bob_priv_key = PrivateKey(bytes.fromhex(bob_raw['privateKey']))
-alice = utils.Account(bob_priv_key, bob_raw['address'], bob_raw['hex'])
+bob = utils.Account(bob_priv_key, bob_raw['address'], bob_raw['hex'])
 
 registry_path = '/home/toor/ens-tron/ens-contracts/artifacts/contracts/registry/ENSRegistry.sol/ENSRegistry.json'
 resolver_path = '/home/toor/ens-tron/ens-contracts/artifacts/contracts/resolvers/PublicResolver.sol/PublicResolver.json'
