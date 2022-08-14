@@ -26,8 +26,6 @@ bob = {
 }
 bob_priv_key = PrivateKey(bytes.fromhex(bob['privateKey']))
 
-def label_hash(label):
-    return keccak_256(codecs.encode(label, 'utf8')).digest()
 
 bytecode = ""
 abi = dict()
